@@ -1,6 +1,16 @@
+@font-face {
+    font-family: 'Horta';
+    src: url(../assets/font/horta/Horta\ demo.otf) format("opentype"); 
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Horta';
+    color: white;
+    text-shadow: 0.5px 0.5px #0057ff;
 }
 
 .logo {
@@ -48,6 +58,35 @@ header {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.412);
     border-bottom: 1px solid white;
 } 
+
+body {
+    height: 100vh;
+    background: linear-gradient(90deg, #5de0e6, #004aad);
+}
+
+main h1 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 50px;
+    text-shadow: 1.5px 1.5px #0057ff;
+}
+
+main {
+    text-align: center;
+}
+
+#input {
+    margin: auto;
+    width: 1000px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.552);
+    border-radius: 50px;
+    border: 5px solid white;
+}
+
+form {
+    padding: 15px;
+}
 
 
 

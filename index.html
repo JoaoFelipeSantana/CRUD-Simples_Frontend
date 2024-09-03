@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Inicial</title>
+</head>
+
+<body>
+    <header>
+        <section>
+            <img src="#" alt="Logo">
+        </section>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#">Cadastrar</a></li>
+                    <li><a href="#">Pesquisar</a></li>
+                    <li><a href="#">Listar</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <h1>
+            Cadastrar Produto
+        </h1>
+        <section>
+            <form action="create_product">
+                <label for="new_name">Nome</label>
+                <input type="text" required id="new_name" name="new_name">
+
+                <label for="new_supplier">Fornecedor</label>
+                <input type="text" id="new_supplier" name="new_supplier"  required>
+
+                <label for="dt_validate">Validade</label>
+                <input type="date" id="dt_validate" name="dt_validate" required>
+
+                <label for="dt_manufacture">Fabricação</label>
+                <input type="date" id="dt_manufacture" name="dt_manufacture" required>
+
+                <label for="new_amount">Quantidade</label>
+                <input type="number" id="new_amount" name="new_amount" required>
+
+                <input type="submit" value="Cadastrar">
+                <input type="button" value="Cancelar">
+            </form>
+        </section>
+    </main>
+    <main>
+
+    </main>
+</body>
+
+</html>

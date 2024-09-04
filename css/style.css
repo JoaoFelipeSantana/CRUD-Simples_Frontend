@@ -75,13 +75,17 @@ main {
     text-align: center;
 }
 
-#input {
+#input, #buscar {
     margin: auto;
     width: 700px;
     height: 520px;
     background-color: rgba(0, 0, 0, 0.552);
     border-radius: 50px;
     border: 5px solid white;
+}
+
+#input {
+    display: none;
 }
 
 form {
@@ -128,11 +132,11 @@ input[type="text"] {
     width: 250px;
 }
 
-#dt_manufacture {
+#dt_manufacture, #edit_dt_manufacture {
     margin-left: 90px;
 }
 
-#btn_cadastrar, #btn_cancelar {
+#btn_cadastrar, #btn_cancelar, #btn_buscar, #btn_editar, #btn_deletar {
     margin-top: 32px;
     width: 150px;
     height: 40px;
@@ -145,15 +149,29 @@ input[type="text"] {
     margin-left: 45px;
 }
 
-#btn_cancelar {
+#btn_cancelar, #btn_deletar {
     background-color: red;
+}
+
+#btn_buscar {
+    background-color: rgb(5, 252, 5);
+}
+
+#btn_editar {
+    background-color: rgb(205, 205, 2);
+    margin-left: 45px;
+}
+
+.botoes {
+    margin-top: 310px;
+    margin-left: 260px;
 }
 
 input:hover {
     box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.258);
 }
 
-#new_amount::-webkit-inner-spin-button{
+#new_amount::-webkit-inner-spin-button, #edit_amount::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 

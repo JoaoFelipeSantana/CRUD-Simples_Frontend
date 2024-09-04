@@ -77,17 +77,85 @@ main {
 
 #input {
     margin: auto;
-    width: 1000px;
-    height: 500px;
+    width: 700px;
+    height: 520px;
     background-color: rgba(0, 0, 0, 0.552);
     border-radius: 50px;
     border: 5px solid white;
 }
 
 form {
-    padding: 15px;
+    padding: 30px;
+    padding-left: 45px;
+    font-size: 32px;
 }
 
+.coluna {
+    margin-bottom: 50px;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+}
+
+.duplas {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+input, .duplas input{
+   height: 33px;
+   border: 5px solid white;
+   border-radius: 10px;
+   text-indent: 10px;
+   font-size: 28px;
+   background-color: rgba(0, 0, 0, 0.466);
+}
+
+input:focus, .duplas input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.384);
+}
+
+input[type="text"] {
+    width: 600px;
+}
+
+.duplas input {
+    width: 250px;
+}
+
+#dt_manufacture {
+    margin-left: 90px;
+}
+
+#btn_cadastrar, #btn_cancelar {
+    margin-top: 32px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    border: none;
+}
+
+#btn_cadastrar {
+    background-color: rgb(5, 252, 5);
+    margin-left: 45px;
+}
+
+#btn_cancelar {
+    background-color: red;
+}
+
+input:hover {
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.258);
+}
+
+#new_amount::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
 
 
 

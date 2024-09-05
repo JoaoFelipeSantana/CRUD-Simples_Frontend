@@ -75,7 +75,7 @@ main {
     text-align: center;
 }
 
-#input, #buscar {
+#input, #buscar, #table_area {
     margin: auto;
     width: 700px;
     height: 520px;
@@ -84,11 +84,35 @@ main {
     border: 5px solid white;
 }
 
+#table_area {
+    width: 1000px;
+    align-items: start;
+}
+
+#data_list {
+    padding-top: 30px;
+    padding-left: 40px;
+    font-size: 32px;
+    border-spacing: 0px;
+}
+
+td {
+    padding: 10px;
+}
+
+.bottom_border {
+    border-bottom: 1px solid white;
+}
+
+tbody td {
+    font-size: 25px;
+}
+
 #input {
     display: none;
 }
 
-form {
+form{
     padding: 30px;
     padding-left: 45px;
     font-size: 32px;

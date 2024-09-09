@@ -36,7 +36,7 @@
             Pesquisar Produto
         </h1>
         <section id="buscar">
-            <form>
+            <form id="buscarUm">
                 <div class="coluna">
                     <div class="items">
                         <label for="id_product">ID</label>
@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="botoes">
-                    <input type="button" value="Buscar" id="btn_buscar">
+                    <input type="submit" value="Buscar" id="btn_buscar">
                     <input type="button" value="Cancelar" id="btn_cancelar">
                 </div>
             </form>
@@ -54,7 +54,7 @@
 
 
         <section id="input">
-            <form action="edit_product">
+            <form id="editProduct">
                 <div class="coluna">
                     <div class="items">
                         <label for="edit_name">Nome</label>
@@ -72,7 +72,7 @@
                 <div class="duplas">
                     <div class="items">
                         <label for="edit_dt_validate">Validade</label>
-                        <input type="date" id="edit_dt_validate" name="edit_dt_validate" required autocomplete="off">
+                        <input type="date" id="edit_dt_validity" name="edit_dt_validity" required autocomplete="off">
                     </div>
 
 
@@ -96,5 +96,6 @@
             </form>
         </section>
     </main>
+    <script src="js/editar_deletarProduto.js"></script>
 </body>
 </html>

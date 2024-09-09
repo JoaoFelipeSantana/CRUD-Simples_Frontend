@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Horta';
-    src: url(../assets/font/horta/Horta\ demo.otf) format("opentype"); 
+    src: url(../assets/font/horta/Horta\ demo.otf) format("opentype");
     font-weight: normal;
     font-style: normal;
 }
@@ -11,6 +11,10 @@
     font-family: 'Horta';
     color: white;
     text-shadow: 0.5px 0.5px #0057ff;
+}
+
+*::-webkit-scrollbar {
+    width: 0px;
 }
 
 .logo {
@@ -37,7 +41,7 @@ header {
 #menu li {
     margin-right: 40px;
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     font-size: 20px;
 }
@@ -52,12 +56,12 @@ header {
     text-decoration: none;
     color: white;
     padding: 5px;
-} 
+}
 
-#menu li:hover{
+#menu li:hover {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.412);
     border-bottom: 1px solid white;
-} 
+}
 
 body {
     height: 100vh;
@@ -75,7 +79,9 @@ main {
     text-align: center;
 }
 
-#input, #buscar, #table_area {
+#input,
+#buscar,
+#table_area {
     margin: auto;
     width: 700px;
     height: 520px;
@@ -86,12 +92,14 @@ main {
 
 #table_area {
     width: 1000px;
+    max-height: 100%;
+    overflow: scroll;
     align-items: start;
 }
 
 #data_list {
-    padding-top: 30px;
-    padding-left: 40px;
+    padding-top: 15px;
+    padding-left: 25px;
     font-size: 32px;
     border-spacing: 0px;
 }
@@ -112,7 +120,7 @@ tbody td {
     display: none;
 }
 
-form{
+form {
     padding: 30px;
     padding-left: 45px;
     font-size: 32px;
@@ -133,16 +141,18 @@ form{
     margin-bottom: 50px;
 }
 
-input, .duplas input{
-   height: 33px;
-   border: 5px solid white;
-   border-radius: 10px;
-   text-indent: 10px;
-   font-size: 28px;
-   background-color: rgba(0, 0, 0, 0.466);
+input,
+.duplas input {
+    height: 33px;
+    border: 5px solid white;
+    border-radius: 10px;
+    text-indent: 10px;
+    font-size: 28px;
+    background-color: rgba(0, 0, 0, 0.466);
 }
 
-input:focus, .duplas input:focus {
+input:focus,
+.duplas input:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
     box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.384);
@@ -156,11 +166,16 @@ input[type="text"] {
     width: 250px;
 }
 
-#dt_manufacture, #edit_dt_manufacture {
+#dt_manufacture,
+#edit_dt_manufacture {
     margin-left: 90px;
 }
 
-#btn_cadastrar, #btn_cancelar, #btn_buscar, #btn_editar, #btn_deletar {
+#btn_cadastrar,
+#btn_cancelar,
+#btn_buscar,
+#btn_editar,
+#btn_deletar {
     margin-top: 32px;
     width: 150px;
     height: 40px;
@@ -173,7 +188,8 @@ input[type="text"] {
     margin-left: 45px;
 }
 
-#btn_cancelar, #btn_deletar {
+#btn_cancelar,
+#btn_deletar {
     background-color: red;
 }
 
@@ -195,11 +211,7 @@ input:hover {
     box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.258);
 }
 
-#new_amount::-webkit-inner-spin-button, #edit_amount::-webkit-inner-spin-button{
+#new_amount::-webkit-inner-spin-button,
+#edit_amount::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
-
-
-
-
-

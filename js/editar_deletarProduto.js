@@ -4,6 +4,7 @@ const formId = document.getElementById("buscarUm");
 const formEdit = document.getElementById("editProduct");
 const input = document.getElementById("input");
 const buscar = document.getElementById("buscar");
+const deletar = document.getElementById("btn_deletar");
 
 
 async function loadOneProduct(id) {
@@ -56,6 +57,20 @@ formEdit.addEventListener("submit", async (event) => {
             'Content-Type':'application/json'
         },
         body: JSON.stringify(udpateProduct)
+    });
+
+    buscar.style.display = "block";
+    input.style.display = "none";
+
+    formId.reset();
+});
+
+
+deletar.addEventListener('click', async () => {
+    const id = formId.id_product.value;
+
+    await fetch (`${apiURL}/${id}`, {
+        method: 'DELETE'
     });
 
     buscar.style.display = "block";

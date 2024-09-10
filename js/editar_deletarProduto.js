@@ -36,3 +36,30 @@ formId.addEventListener("submit", (event) => {
         window.alert("Insira um valor");
     }
 });
+
+
+formEdit.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const udpateProduct = {
+        id: formId.id_product.value,
+        name: formEdit.edit_name.value,
+        supplier: formEdit.edit_supplier.value,
+        dt_validity : formEdit.edit_dt_validity.value,
+        dt_manufacture : formEdit.edit_dt_manufacture.value,
+        amount : parseInt(formEdit.edit_amount.value)
+    }
+
+    await fetch (apiURL, {
+        method: 'PUT',
+        headers: {
+            'Content-Type':'application/json'
+        },
+        body: JSON.stringify(udpateProduct)
+    });
+
+    buscar.style.display = "block";
+    input.style.display = "none";
+
+    formId.reset();
+});

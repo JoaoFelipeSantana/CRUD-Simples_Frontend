@@ -7,7 +7,7 @@
 <p align="center">
      <a href="https://github.com/JoaoFelipeSantana/CRUD-Simples-Backend">📱 Repositório da API desenvolvida em Spring Boot</a>
     <br>
-     <a href="https://github.com/JoaoFelipeSantana/CRUD-Simples-Backend">📱 Github Pages da interface</a>
+     <a href="https://joaofelipesantana.github.io/CRUD-Simples_Frontend/">📱 Github Pages da interface</a>
 </p>
 
 <h2 id="technologies">💻 Technologies</h2>
